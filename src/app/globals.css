@@ -33,7 +33,7 @@
 }
 .scroll-match {
   animation: scroll-matcher linear;
-  animation-timeline: view(0px 100px);
+  animation-timeline: view(0px 80vh);
 }
 @keyframes scroll-matcher {
   to {
