@@ -2,3 +2,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.pop-in-out {
+  animation: popup 5s ease-in-out infinite;
+}
+.floater {
+  animation: float 5s ease-in-out infinite;
+}
+@keyframes popup {
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 80%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.scroll-match {
+  animation: pop-in-out 2s linear;
+}
+@keyframes scroll-matcher {
+  to {
+    scale: 1.5 1.5;
+  }
+}

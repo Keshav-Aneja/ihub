@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Heading from "../components/Heading";
 import { projects } from "../data/project";
+import { work } from "../data/work";
 import ProjectCard from "../components/ProjectCard";
 export default function Discover() {
   const [activeTab, setActiveTab] = useState(0);
@@ -84,6 +85,24 @@ export default function Discover() {
             </ul>
           )}
         </div>
+        {activeTab === 0 && (
+          <div
+            className={`--menu w-[65%] h-full grid ${
+              projectTab === 0 ? "grid-cols-2" : "grid-cols-3"
+            } gap-12 px-12 `}
+          >
+            {work.map(
+              (project, index) =>
+                project.id === projectTab && (
+                  <ProjectCard
+                    name={project.name}
+                    key={index}
+                    img={project.img}
+                  />
+                )
+            )}
+          </div>
+        )}
         {activeTab === 1 && (
           <div className="--menu w-[65%] h-full grid grid-cols-2 gap-12 px-12 ">
             {projects.map(
