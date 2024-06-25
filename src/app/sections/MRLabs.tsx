@@ -40,21 +40,23 @@ export default function MRLabs() {
         height={500}
         className="w-60 h-auto floater absolute bottom-[20%] left-48"
       />
-      <View3D
-        tag="div"
-        src="/meta_quest_3_low_poly_oculus_quest.glb"
-        canvasClass="myclass"
-        className="w-[100vw] h-[100vh] pointer-events-none scroll-match"
-        onReady={(e) => {
-          console.log("Ready", e);
-        }}
-        zoom={{ doubleTap: false }}
-        scrollable={false}
-        rotate={{ scale: 5, duration: 2000 }}
-        autoplay={true}
-        wheelScrollable={false}
-        // annotationURL={"/models/matridevice-annotations.json"}
-      />
+      <div className="">
+        <View3D
+          tag="div"
+          src="/meta_quest_3_low_poly_oculus_quest.glb"
+          canvasClass="myclass"
+          className="w-[100vw] h-[100vh] pointer-events-none parallax-container"
+          onReady={(e) => {
+            console.log("Ready", e);
+          }}
+          zoom={{ doubleTap: false }}
+          scrollable={false}
+          rotate={{ scale: 5, duration: 2000 }}
+          autoplay={true}
+          wheelScrollable={false}
+          // annotationURL={"/models/matridevice-annotations.json"}
+        />
+      </div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[rgba(255,255,255,0.4)] backdrop-blur-[2px] p-4 rounded-xl">
         <h1
           className="text-[4rem] text-white text-center font-bold 2"
