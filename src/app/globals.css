@@ -32,10 +32,11 @@
   }
 }
 .scroll-match {
-  animation: pop-in-out 2s linear;
+  animation: scroll-matcher linear;
+  animation-timeline: view(0px 100px);
 }
 @keyframes scroll-matcher {
   to {
-    scale: 1.5 1.5;
+    transform: scale(2);
   }
 }

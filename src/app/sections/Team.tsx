@@ -22,7 +22,7 @@ export default function Team() {
       </div>
       <h1 className="text-3xl font-bold text-primary">Design Team</h1>
       <div className="flex items-center  w-full mx-auto overflow-x-hidden gap-8">
-        <Marquee pauseOnHover={true}>
+        <Marquee>
           {team.map(
             (teamMember, index) =>
               teamMember.type === "design" && (
@@ -38,7 +38,7 @@ export default function Team() {
       </div>
       <h1 className="text-3xl font-bold text-primary">Animation + VFX</h1>
       <div className="flex items-center  w-full mx-auto overflow-x-hidden gap-8">
-        <Marquee pauseOnHover={true}>
+        <Marquee>
           {team.map(
             (teamMember, index) =>
               teamMember.type === "animation" && (
@@ -54,7 +54,7 @@ export default function Team() {
       </div>
       <h1 className="text-3xl font-bold text-primary">Development Team</h1>
       <div className="flex items-center  w-full mx-auto overflow-x-hidden gap-8">
-        <Marquee pauseOnHover={true}>
+        <Marquee>
           {team.map(
             (teamMember, index) =>
               teamMember.type === "development" && (
