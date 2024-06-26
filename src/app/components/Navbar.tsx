@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center px-8 p-4 absolute top-4 left-1/2 -translate-x-1/2 bg-white rounded-xl w-[80%] mx-auto z-[100] shadow-xl">
+    <nav className="--navbar w-[80%] flex justify-between items-center px-8 p-4 absolute top-4 left-1/2 -translate-x-1/2 bg-white rounded-xl  mx-auto z-[100] shadow-xl">
       <Image
         alt="logo"
         src="/logo.webp"
@@ -12,16 +12,36 @@ export default function Navbar() {
       <section className="h-full">
         <ul className="flex gap-6 items-center h-full font-medium">
           <li>
-            <a href="">Area of work</a>
+            <a
+              href=""
+              className="hover:text-primary transition-all duration-100 ease-linear"
+            >
+              Area of work
+            </a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a
+              href=""
+              className="hover:text-primary transition-all duration-100 ease-linear"
+            >
+              Projects
+            </a>
           </li>
           <li>
-            <a href="">Activities</a>
+            <a
+              href=""
+              className="hover:text-primary transition-all duration-100 ease-linear"
+            >
+              Activities
+            </a>
           </li>
           <li>
-            <a href="">Team</a>
+            <a
+              href=""
+              className="hover:text-primary transition-all duration-100 ease-linear"
+            >
+              Team
+            </a>
           </li>
         </ul>
       </section>

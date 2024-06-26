@@ -62,6 +62,46 @@ export const team = [
     img: "d8.webp",
   },
   {
+    type: "design",
+    name: "Kalpesh Sompura",
+    img: "d1.webp",
+  },
+  {
+    type: "design",
+    name: "Aryan Choudhary",
+    img: "d2.webp",
+  },
+  {
+    type: "design",
+    name: "Nitesh Godara",
+    img: "d3.webp",
+  },
+  {
+    type: "design",
+    name: "Urshita Tandon",
+    img: "d4.webp",
+  },
+  {
+    type: "design",
+    name: "Arpit Verma",
+    img: "d5.webp",
+  },
+  {
+    type: "design",
+    name: "Ayush Agarwal",
+    img: "d6.webp",
+  },
+  {
+    type: "design",
+    name: "Karnika Khipal",
+    img: "d7.webp",
+  },
+  {
+    type: "design",
+    name: "Varsha Anand",
+    img: "d8.webp",
+  },
+  {
     type: "animation",
     name: "Keshav Agarwal",
     img: "a1.webp",

@@ -13,6 +13,7 @@ export default function ProjectCard({ img, name }: Props) {
           width={400}
           height={300}
           className="w-full h-full"
+          priority
         />
       </section>
       <h1 className="font-medium text-sm w-full mx-auto text-center mt-4">

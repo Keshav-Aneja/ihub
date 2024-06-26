@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Heading from "../components/Heading";
 import { projects } from "../data/project";
 import { work } from "../data/work";
@@ -6,12 +6,17 @@ import ProjectCard from "../components/ProjectCard";
 export default function Discover() {
   const [activeTab, setActiveTab] = useState(0);
   const [projectTab, setProjectTab] = useState(0);
+  useEffect(() => {
+    if (activeTab === 0 || activeTab === 1) {
+      setProjectTab(0);
+    }
+  }, [activeTab]);
   return (
     <div className="w-full min-h-screen bg-light_bg flex flex-col gap-8">
       <Heading heading="Discover" />
-      <div className="w-[25%] mx-auto p-2  rounded-full shadow-xl border-[1px] border-[#aeaeae40]">
+      <div className="w-[20%] mx-auto p-2  rounded-full shadow-xl border-[1px] border-[#aeaeae40] text-sm">
         <button
-          className={`w-[50%]  h-12 px-4 py-2 font-medium rounded-full ${
+          className={`w-[50%]  h-12 px-4 py-1 font-medium rounded-full ${
             activeTab === 0 && "bg-dark_bg text-white"
           }`}
           onClick={() => setActiveTab(0)}
@@ -19,7 +24,7 @@ export default function Discover() {
           Area of work
         </button>
         <button
-          className={`w-[50%] h-12 px-4 py-2 font-medium rounded-full ${
+          className={`w-[50%] h-12 px-4 py-1 font-medium rounded-full ${
             activeTab === 1 && "bg-dark_bg text-white"
           }`}
           onClick={() => setActiveTab(1)}
@@ -28,9 +33,9 @@ export default function Discover() {
         </button>
       </div>
       <section className="w-[80%] flex items-start justify-between mx-auto">
-        <div className="--menu w-[35%] h-full border-r-[1px] border-primary ">
+        <div className="--menu w-[35%] h-full  border-primary ">
           {activeTab === 0 ? (
-            <ul className="flex flex-col gap-6">
+            <ul className="flex flex-col gap-12">
               <li
                 onClick={() => setProjectTab(0)}
                 className={`${
@@ -49,7 +54,7 @@ export default function Discover() {
               </li>
             </ul>
           ) : (
-            <ul className="flex flex-col gap-6">
+            <ul className="flex flex-col gap-12">
               <li
                 onClick={() => setProjectTab(0)}
                 className={`${
@@ -87,7 +92,7 @@ export default function Discover() {
         </div>
         {activeTab === 0 && (
           <div
-            className={`--menu w-[65%] h-full grid ${
+            className={`--menu w-[65%] h-full grid border-l-[1px] border-primary ${
               projectTab === 0 ? "grid-cols-2" : "grid-cols-3"
             } gap-12 px-12 `}
           >
@@ -104,7 +109,7 @@ export default function Discover() {
           </div>
         )}
         {activeTab === 1 && (
-          <div className="--menu w-[65%] h-full grid grid-cols-2 gap-12 px-12 ">
+          <div className="--menu w-[65%] h-full grid grid-cols-2 gap-12 px-12 border-l-[1px] border-primary ">
             {projects.map(
               (project, index) =>
                 project.id === projectTab && (

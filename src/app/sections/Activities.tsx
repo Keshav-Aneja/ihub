@@ -11,13 +11,25 @@ export default function Activities() {
             <section
               className={`w-[50%] h-full ${index % 2 === 0 && "order-1"}`}
             >
-              <h1 className="text-3xl font-primary font-bold">
-                {activity.name}
-              </h1>
-              <p className="text-sm text-black/70">{activity.description}</p>
+              <div
+                className={`${
+                  index % 2 === 0 ? "float-left" : "float-right"
+                } w-[75%]`}
+              >
+                <h1 className="text-3xl font-primary font-bold text-primary mb-6">
+                  {activity.name}
+                </h1>
+                <p className="text-sm text-black/70 leading-6 text-justify">
+                  {activity.description}
+                </p>
+              </div>
             </section>
             <section className="w-[50%] h-full">
-              <div className="w-full aspect-[500/333] rounded-xl overflow-hidden bg-dark_bg">
+              <div
+                className={`${
+                  index % 2 === 0 && "float-right"
+                } w-[75%] aspect-[500/333] rounded-xl overflow-hidden bg-dark_bg`}
+              >
                 <Image
                   src={`/${activity.img}`}
                   alt={activity.name}
