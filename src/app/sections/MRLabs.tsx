@@ -45,7 +45,7 @@ export default function MRLabs() {
         <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 pop-in-out">
           <View3D
             tag="div"
-            src="/meta_quest_3_low_poly_oculus_quest.glb"
+            src="/meta3.glb"
             canvasClass="myclass"
             className="w-[100vw] h-[100vh] pointer-events-none "
             onReady={(e) => {
