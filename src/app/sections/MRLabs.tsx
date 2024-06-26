@@ -2,6 +2,7 @@ import View3D from "@egjs/react-view3d";
 import Image from "next/image";
 import "@egjs/react-view3d/css/view3d-bundle.min.css";
 import Marquee from "react-fast-marquee";
+import { motion } from "framer-motion";
 export default function MRLabs() {
   return (
     <div className="w-full h-screen overflow-hidden">
@@ -59,12 +60,15 @@ export default function MRLabs() {
           />
         </div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[rgba(255,255,255,0.4)] backdrop-blur-[2px] p-4 rounded-xl">
-          <h1
+          <motion.h1
             className="text-[4rem] text-white text-center font-bold 2"
             style={{ textShadow: "0px 0px 10px rgba(0,0,0,0.5)" }}
+            initial={{ opacity: 0.7, translateY: -50, scale: 0.5 }}
+            whileInView={{ opacity: 1, translateY: 0, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
             Mixed Reality Labs
-          </h1>
+          </motion.h1>
           <p className="text-black text-center font-medium text-xl  w-fit  mx-auto">
             Infrastructure for XR Development
           </p>
