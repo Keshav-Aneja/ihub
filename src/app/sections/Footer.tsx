@@ -29,7 +29,7 @@ const Footer = () => {
           </button>
           <div className="--socials flex gap-4  ">
             <Link
-              href="https://www.facebook.com/profile.php?id=100095488214890&mibextid=ZbWKwL"
+              href=""
               className=" group p-2 bg-white w-8 h-8 rounded-full aspect-square hover:bg-primary transition-all duration-100 ease-linear cursor-pointer scale-75 md:scale-100"
             >
               <Image
@@ -41,7 +41,7 @@ const Footer = () => {
               />
             </Link>
             <Link
-              href="https://www.instagram.com/aurax.world"
+              href=""
               className=" group p-2 bg-white w-8 h-8 rounded-full aspect-square hover:bg-primary transition-all duration-100 ease-linear cursor-pointer scale-75 md:scale-100"
             >
               <Image
@@ -53,7 +53,7 @@ const Footer = () => {
               />
             </Link>
             <Link
-              href="https://www.linkedin.com/company/auraxtech/"
+              href=""
               className=" group p-2 bg-white w-8 h-8 rounded-full aspect-square hover:bg-primary transition-all duration-100 ease-linear cursor-pointer scale-75 md:scale-100"
             >
               <Image
@@ -65,7 +65,7 @@ const Footer = () => {
               />
             </Link>
             <Link
-              href="https://x.com/aurax_world"
+              href=""
               className=" group p-2 bg-white w-8 h-8 rounded-full aspect-square hover:bg-primary transition-all duration-100 ease-linear cursor-pointer scale-75 md:scale-100"
             >
               <Image
@@ -77,7 +77,7 @@ const Footer = () => {
               />
             </Link>
             <Link
-              href="https://www.youtube.com/@AuraX_world"
+              href=""
               className=" group p-2 bg-white w-8 h-8 rounded-full aspect-square hover:bg-primary transition-all duration-100 ease-linear cursor-pointer scale-75 md:scale-100"
             >
               <Image
@@ -110,50 +110,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-const companies = [
-  "Squarespace",
-  "Joomla",
-  "Drupal",
-  "BigCommerce",
-  "Duda",
-  "GoDaddy Website Builder",
-  "Strikingly",
-  "Jimdo",
-  "Zoho Sites",
-  "Yola",
-  "Site123",
-  "Webnode",
-  "Simvoly",
-  "uCraft",
-  "Tilda",
-  "Mozello",
-  "Moonfruit",
-  "uKit",
-  "PageCloud",
-  "Carrd",
-  "Webs",
-  "SiteW",
-  "Brizy",
-  "Elementor (WordPress plugin)",
-  "Gatsby",
-  "HubSpot CMS",
-  "TYPO3",
-  "OctoberCMS",
-  "Grav",
-  "Concrete5",
-  "CMS Made Simple",
-  "SilverStripe",
-  "Contentful",
-  "ButterCMS",
-  "Sanity",
-  "Prismic",
-  "Statamic",
-  "Forestry",
-  "Netlify CMS",
-  "Storyblok",
-  "DatoCMS",
-  "Directus",
-  "Cockpit CMS",
-  "Unbounce",
-];
