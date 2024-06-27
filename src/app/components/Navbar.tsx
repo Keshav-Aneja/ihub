@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Dispatch, SetStateAction, useState } from "react";
 interface Props {
-  activeTab: number;
-  setActiveTab: Dispatch<SetStateAction<number>>;
+  activeTab?: number;
+  setActiveTab?: Dispatch<SetStateAction<number>>;
 }
 export default function Navbar({ activeTab, setActiveTab }: Props) {
   const [openTeamNav, setOpenTeamNav] = useState(false);
@@ -34,7 +34,7 @@ export default function Navbar({ activeTab, setActiveTab }: Props) {
               <a
                 href="/#focus"
                 className="hover:text-primary transition-all duration-100 ease-linear"
-                onClick={() => setActiveTab(0)}
+                onClick={() => setActiveTab && setActiveTab(0)}
               >
                 Focus Area
               </a>
@@ -43,7 +43,7 @@ export default function Navbar({ activeTab, setActiveTab }: Props) {
               <a
                 href="/#focus"
                 className="hover:text-primary transition-all duration-100 ease-linear"
-                onClick={() => setActiveTab(1)}
+                onClick={() => setActiveTab && setActiveTab(1)}
               >
                 Projects
               </a>
