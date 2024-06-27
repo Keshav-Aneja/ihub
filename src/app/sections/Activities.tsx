@@ -3,7 +3,7 @@ import { activities } from "../data/activities";
 import Image from "next/image";
 export default function Activities() {
   return (
-    <div className="w-[80%] mx-auto flex flex-col gap-8">
+    <div className="w-[80%] mx-auto flex flex-col gap-8" id="activity">
       <Heading heading="Activities" />
       <section className="flex flex-col gap-20">
         {activities.map((activity, index) => (

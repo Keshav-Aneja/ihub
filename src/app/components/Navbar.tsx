@@ -81,7 +81,7 @@ export default function Navbar({ activeTab, setActiveTab }: Props) {
             </li>
             <li>
               <a
-                href="/#mrlab"
+                href="/#activity"
                 className="hover:text-primary transition-all duration-100 ease-linear"
               >
                 Outreach Activity

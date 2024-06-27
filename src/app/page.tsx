@@ -7,6 +7,7 @@ import Team from "./sections/Team";
 import MRLabs from "./sections/MRLabs";
 import Footer from "./sections/Footer";
 import { useState } from "react";
+import Events from "./sections/Events";
 export default function Home() {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <Discover activeTab={activeTab} setActiveTab={setActiveTab} />
       <MRLabs />
+      <Events />
       <Activities />
       <Team />
       <Footer />
