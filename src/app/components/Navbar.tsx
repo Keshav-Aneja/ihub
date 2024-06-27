@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 interface Props {
   activeTab?: number;
   setActiveTab?: Dispatch<SetStateAction<number>>;
@@ -58,13 +58,18 @@ export default function Navbar({ activeTab, setActiveTab }: Props) {
             </li>
             <li
               className="relative hover:text-primary transition-all cursor-pointer duration-100 ease-linear"
-              onMouseEnter={() => setOpenTeamNav(true)}
+              onMouseEnter={() => {
+                setOpenTeamNav(true);
+                setOpenServiceNav(false);
+              }}
             >
               People
               {openTeamNav && (
                 <div
-                  className={`w-fit bg-white rounded-lg p-2 absolute top-12 -right-8 text-xs text-center flex flex-col gap-2   shadow-lg text-black`}
-                  onMouseOver={() => setOpenTeamNav(true)}
+                  className={`w-fit bg-white rounded-lg p-2 absolute top-6 -right-8 text-xs text-center flex flex-col gap-2   shadow-lg text-black`}
+                  onMouseOver={() => {
+                    setOpenTeamNav(true);
+                  }}
                 >
                   <Link href="/coordinators">
                     <li className="text-nowrap hover:bg-slate-200 p-2 rounded-lg cursor-pointer">
@@ -79,22 +84,18 @@ export default function Navbar({ activeTab, setActiveTab }: Props) {
                 </div>
               )}
             </li>
-            <li>
-              <a
-                href="/#activity"
-                className="hover:text-primary transition-all duration-100 ease-linear"
-              >
-                Outreach Activity
-              </a>
-            </li>
+
             <li
               className="relative hover:text-primary transition-all cursor-pointer duration-100 ease-linear"
-              onMouseEnter={() => setOpenServiceNav(true)}
+              onMouseEnter={() => {
+                setOpenServiceNav(true);
+                setOpenTeamNav(false);
+              }}
             >
               Services
               {openServiceNav && (
                 <div
-                  className={`w-fit bg-white rounded-lg p-2 absolute top-12 -right-8 text-xs text-center flex flex-col gap-2   shadow-lg text-black`}
+                  className={`w-fit bg-white rounded-lg p-2 absolute top-6 -right-8 text-xs text-center flex flex-col gap-2   shadow-lg text-black`}
                   onMouseOver={() => setOpenServiceNav(true)}
                 >
                   <a href="/">
@@ -114,6 +115,14 @@ export default function Navbar({ activeTab, setActiveTab }: Props) {
                   </a>
                 </div>
               )}
+            </li>
+            <li>
+              <a
+                href="/#activity"
+                className="hover:text-primary transition-all duration-100 ease-linear"
+              >
+                Outreach Activity
+              </a>
             </li>
           </ul>
         </section>
