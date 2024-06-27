@@ -14,7 +14,10 @@ const Footer = () => {
           className="w-16 md:w-52 h-auto"
         />
         <section className="flex flex-col gap-4 text-black">
-          <span className="flex items-center gap-2 text-sm md:text-base">
+          <a
+            href="mailto:arvrinfo@ihub-drishit.ai"
+            className="flex items-center gap-2 text-sm md:text-base"
+          >
             <Image
               src="/email.svg"
               alt="ihub"
@@ -22,8 +25,21 @@ const Footer = () => {
               height={50}
               className="w-3 md:w-4 invert"
             />
-            ihub@email.com
-          </span>
+            arvrinfo@ihub-drishit.ai
+          </a>
+          <a
+            href="tel:02912802248"
+            className="flex items-center gap-2 text-sm md:text-base"
+          >
+            <Image
+              src="/phone.png"
+              alt="ihub"
+              width={50}
+              height={50}
+              className="w-3 md:w-4"
+            />
+            0291-2802248
+          </a>
           <button className="px-6 py-2 rounded-md bg-primary text-white text-sm font-normal w-fit">
             Get in touch
           </button>

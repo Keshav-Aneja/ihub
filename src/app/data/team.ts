@@ -1,30 +1,16 @@
 export const team = [
   {
     type: "core",
-    name: "Dr. Amit Bhardwaj",
-    img: "core3.webp",
-    designation: "Faculty",
-    position: "Vertical coordinator",
-  },
-
-  {
-    type: "core",
-    name: "Dr. Rajendra Nagar",
-    img: "core1.webp",
-    designation: "Faculty",
-    position: "Vertical coordinator",
-  },
-  {
-    type: "core",
     name: "Dr. Vishakha Pareek",
     img: "core2.webp",
-    designation: "Faculty",
-    position: "Vertical coordinator",
+    designation: "Scientific Officer",
+    position: "(Grade-II)",
   },
   {
     type: "design",
     name: "Kalpesh Sompura",
     img: "d1.webp",
+    highlight: true,
   },
   {
     type: "design",
@@ -91,12 +77,15 @@ export const team = [
     type: "development",
     name: "Ajay Parakh",
     img: "dev1.png",
+    highlight: true,
   },
   {
     type: "development",
     name: "Asyrjya Bikash Handique",
     img: "dev2.png",
+    highlight: true,
   },
+
   {
     type: "development",
     name: "Vibhor Singh",

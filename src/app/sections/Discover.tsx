@@ -1,11 +1,15 @@
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import Heading from "../components/Heading";
 import { projects } from "../data/project";
 import { work } from "../data/work";
 import ProjectCard from "../components/ProjectCard";
 import ProjectCardBlock from "../components/ProjectCardBlock";
-export default function Discover() {
-  const [activeTab, setActiveTab] = useState(0);
+interface Props {
+  activeTab: number;
+  setActiveTab: Dispatch<SetStateAction<number>>;
+}
+export default function Discover({ activeTab, setActiveTab }: Props) {
+  // const [activeTab, setActiveTab] = useState(0);
   const [projectTab, setProjectTab] = useState(0);
   useEffect(() => {
     if (activeTab === 0 || activeTab === 1) {
@@ -13,7 +17,10 @@ export default function Discover() {
     }
   }, [activeTab]);
   return (
-    <div className="w-full min-h-screen bg-light_bg flex flex-col gap-8">
+    <div
+      className="w-full min-h-screen bg-light_bg flex flex-col gap-8"
+      id="focus"
+    >
       <Heading heading="Discover" />
       <div className="w-[20%] mx-auto p-2  rounded-full shadow-xl border-[1px] border-[#aeaeae40] text-sm">
         <button

@@ -35,6 +35,25 @@ export default function Team() {
                   img={teamMember.img}
                   key={index}
                   small={true}
+                  highlight={teamMember.highlight ?? false}
+                />
+              )
+          )}
+        </div>
+
+        <h1 className="text-2xl font-medium  text-primary -mb-6 text-center">
+          Development Team
+        </h1>
+        <div className="flex items-center  w-full mx-auto overflow-x-hidden flex-wrap justify-center">
+          {team.map(
+            (teamMember, index) =>
+              teamMember.type === "development" && (
+                <TeamCard
+                  name={teamMember.name}
+                  img={teamMember.img}
+                  key={index}
+                  small={true}
+                  highlight={teamMember.highlight ?? false}
                 />
               )
           )}
@@ -51,22 +70,7 @@ export default function Team() {
                   img={teamMember.img}
                   key={index}
                   small={true}
-                />
-              )
-          )}
-        </div>
-        <h1 className="text-2xl font-medium  text-primary -mb-6 text-center">
-          Development Team
-        </h1>
-        <div className="flex items-center  w-full mx-auto overflow-x-hidden flex-wrap justify-center">
-          {team.map(
-            (teamMember, index) =>
-              teamMember.type === "development" && (
-                <TeamCard
-                  name={teamMember.name}
-                  img={teamMember.img}
-                  key={index}
-                  small={true}
+                  highlight={teamMember.highlight ?? false}
                 />
               )
           )}

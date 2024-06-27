@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 export default function MRLabs() {
   return (
-    <div className="w-full h-screen overflow-hidden">
+    <div className="w-full h-screen overflow-hidden" id="mrlab">
       <div className="w-full h-screen relative parallax-container overflow-x-hidden">
         <Image
           src="/Hololens1.png"

@@ -5,26 +5,29 @@ export default function TeamCard({
   small,
   position,
   designation,
+  highlight,
 }: {
   img: string;
   name: string;
   small?: boolean;
   position?: string;
   designation?: string;
+  highlight?: boolean;
 }) {
   return (
     <div className="p-2 flex flex-col items-center">
       <div
-        className={`${
-          small ? "w-32" : "w-44"
-        } aspect-[333/390] bg-dark_bg  overflow-hidden relative rounded-md`}
+        className={`${small ? "w-32" : "w-44"} ${
+          highlight &&
+          "border-4 border-[#ecd8d8] shadow-[0px_0px_10px_rgba(0,0,0,0.8)] "
+        } aspect-[333/390]    overflow-hidden relative rounded-md`}
       >
         <Image
           src={`/${img}`}
           alt={name}
           width={400}
           height={600}
-          className="w-full h-full"
+          className={`${highlight && "rounded-md"} w-full h-full`}
         />
         {small && (
           <>
