@@ -11,10 +11,15 @@ import { useState } from "react";
 import Events from "./sections/Events";
 export default function Home() {
   const [activeTab, setActiveTab] = useState(0);
-
+  const [openNavi, setOpenNavi] = useState(false);
   return (
     <main className="w-full overflow-x-hidden relative text-black font-poppins flex flex-col gap-32">
-      <MobileNav activeTab={activeTab} setActiveTab={setActiveTab} />
+      <MobileNav
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        openNavi={openNavi}
+        setOpenNavi={setOpenNavi}
+      />
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
       <Hero />
       <Discover activeTab={activeTab} setActiveTab={setActiveTab} />
