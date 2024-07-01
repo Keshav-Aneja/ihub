@@ -18,7 +18,7 @@ export default function Hero() {
         </p>
         <p className="mt-2">AR-VR Vertical</p>
       </div>
-      <video
+      {/* <video
         src="/demo.mp4"
         width={1920}
         height={1080}
@@ -27,13 +27,21 @@ export default function Hero() {
         autoPlay={true}
         muted={true}
         loop={true}
-      ></video>
+      ></video> */}
       <Image
         src="/hero.jpg"
         alt="ihub"
         width={1920}
         height={1080}
-        className="absolute top-0 left-0 w-screen h-screen z-[-1]"
+        className="hidden md:block absolute top-0 left-0 w-screen h-screen z-[-1]"
+        priority={true}
+      />
+      <Image
+        src="/mobile-hero.jpg"
+        alt="ihub"
+        width={1920}
+        height={1080}
+        className="md:hidden absolute top-0 left-0 w-screen h-screen z-[-1]"
         priority={true}
       />
       {/* <Image
