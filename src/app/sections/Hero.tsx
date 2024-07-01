@@ -7,11 +7,15 @@ export default function Hero() {
   }, []);
   return (
     <div className="w-full h-screen relative overflow-y-hidden overflow-x-hidden">
-      <div className="bg-light_bg w-[110vw] h-[30vh] rounded-[100%] absolute -top-[15vh] left-1/2 -translate-x-1/2 "></div>
-      <div className="bg-light_bg w-[110vw] h-[10vh] rounded-[100%] absolute -bottom-[5vh] left-1/2 -translate-x-1/2 "></div>
+      <div className="bg-light_bg w-[110vw] h-[30vh] rounded-[100%] absolute -top-[15vh] left-1/2 -translate-x-1/2 hidden md:block"></div>
+      <div className="bg-light_bg w-[110vw] h-[10vh] rounded-[100%] absolute -bottom-[5vh] left-1/2 -translate-x-1/2"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center parallax-container-2   hero-heading">
-        <h1 className="text-8xl   font-bold">iHub - Drishti</h1>
-        <p className="text-3xl tracking-wide">Unleashing XR Potential</p>
+        <h1 className="text-4xl md:text-6xl lg:text-8xl   font-bold">
+          iHub - Drishti
+        </h1>
+        <p className="text-xl md:text-2xl lg:text-3xl tracking-wide">
+          Unleashing XR Potential
+        </p>
         <p className="mt-2">AR-VR Vertical</p>
       </div>
       <video

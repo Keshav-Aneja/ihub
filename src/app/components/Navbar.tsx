@@ -13,14 +13,14 @@ export default function Navbar({ activeTab, setActiveTab }: Props) {
     <>
       {(openTeamNav || openServiceNav) && (
         <div
-          className="fixed top-0 left-0 w-screen h-screen z-[20]"
+          className="fixed top-0 left-0 w-screen hidden md:flex h-screen z-[20]"
           onMouseOver={() => {
             setOpenServiceNav(false);
             setOpenTeamNav(false);
           }}
         ></div>
       )}
-      <nav className="--navbar w-[80%] flex justify-between items-center px-8 py-0 absolute top-4 left-1/2 -translate-x-1/2  rounded-xl  mx-auto z-[100] ">
+      <nav className="hidden md:flex --navbar w-[80%]  justify-between items-center px-8 py-0 absolute top-4 left-1/2 -translate-x-1/2  rounded-xl  mx-auto z-[100] ">
         <Image
           alt="logo"
           src="/logo.webp"

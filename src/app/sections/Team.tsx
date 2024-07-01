@@ -23,7 +23,7 @@ export default function Team() {
               )
           )}
         </div>
-        <h1 className="text-2xl font-medium  text-primary -mb-6 text-center">
+        <h1 className="text-lg md:text-xl lg:text-2xl font-medium  text-primary -mb-6 text-center">
           Design Team
         </h1>
         <div className="flex items-center  w-full mx-auto overflow-x-hidden gap-0 relative flex-wrap justify-center">
@@ -41,7 +41,7 @@ export default function Team() {
           )}
         </div>
 
-        <h1 className="text-2xl font-medium  text-primary -mb-6 text-center">
+        <h1 className="text-lg md:text-xl lg:text-2xl font-medium  text-primary -mb-6 text-center">
           Development Team
         </h1>
         <div className="flex items-center  w-full mx-auto overflow-x-hidden flex-wrap justify-center">
@@ -58,7 +58,7 @@ export default function Team() {
               )
           )}
         </div>
-        <h1 className="text-2xl font-medium  text-primary -mb-6 text-center">
+        <h1 className="text-lg md:text-xl lg:text-2xl font-medium  text-primary -mb-6 text-center">
           Animation + VFX
         </h1>
         <div className="flex items-center  w-full mx-auto overflow-x-hidden flex-wrap justify-center">

@@ -18,8 +18,8 @@ export default function Carousel() {
 
   return (
     <div className="w-full h-full">
-      <section className=" relative w-full h-full scale-90">
-        <div className="w-[35%] aspect-[500/333] rounded-xl border-[3px] border-black/50 shadow-[0px_10px_20px_rgba(0,0,0,0.5)] bg-white z-[50] absolute top-1/2 left-0 translate-y-1/2">
+      <section className=" relative w-full h-full md:scale-90">
+        <div className="hidden md:block w-[35%] aspect-[500/333] rounded-xl border-[3px] border-black/50 shadow-[0px_10px_20px_rgba(0,0,0,0.5)] bg-white z-[50] absolute top-1/2 left-0 translate-y-1/2">
           <Image
             src={`/${events[prevImage].img}`}
             alt={events[prevImage].name}
@@ -28,7 +28,7 @@ export default function Carousel() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-[55%] aspect-[500/333] rounded-xl border-[3px] border-black/50 shadow-[0px_10px_20px_rgba(0,0,0,0.5)] bg-white z-[100] absolute top-12 left-1/2 -translate-x-1/2 ">
+        <div className="w-[100%] md:w-[55%] aspect-[500/333] rounded-xl border-[3px] border-black/50 shadow-[0px_10px_20px_rgba(0,0,0,0.5)] bg-white z-[100] absolute top-12 left-1/2 -translate-x-1/2 ">
           <Image
             src={`/${events[currImage].img}`}
             alt={events[currImage].name}
@@ -53,7 +53,7 @@ export default function Carousel() {
             onClick={handleNextClick}
           />
         </div>
-        <div className="w-[35%] aspect-[500/333] rounded-xl border-[3px] border-black/50 shadow-[0px_10px_20px_rgba(0,0,0,0.5)] bg-white z-[50] absolute top-1/2 right-0 translate-y-1/2">
+        <div className="hidden md:block w-[35%] aspect-[500/333] rounded-xl border-[3px] border-black/50 shadow-[0px_10px_20px_rgba(0,0,0,0.5)] bg-white z-[50] absolute top-1/2 right-0 translate-y-1/2">
           <Image
             src={`/${events[nextImage].img}`}
             alt={events[nextImage].name}
