@@ -3,15 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <div className="bg-content w-full flex flex-col">
+    <div className="bg-content w-[90%] mx-auto md:w-full flex flex-col">
       <div className="w-[90%] h-[1px] bg-[#7A7A7A] my-6 mx-auto hidden md:block"></div>
-      <section className="w-full h-full p-4 md:p-10 flex  justify-center gap-8 md:gap-20 items-start md:items-start">
+      <section className="w-full h-full p-4 md:p-10 flex flex-col  md:flex-row  justify-center gap-8 md:gap-20 md:items-start ">
         <Image
           src="/logo.webp"
           alt="ihub"
           width={600}
           height={600}
-          className="w-16 md:w-52 h-auto"
+          className="w-28 md:w-52 h-auto"
         />
         <section className="flex flex-col gap-4 text-black">
           <a
@@ -43,7 +43,7 @@ const Footer = () => {
           <button className="px-6 py-2 rounded-md bg-primary text-white text-sm font-normal w-fit">
             Get in touch
           </button>
-          <div className="--socials flex gap-4  ">
+          <div className="--socials flex gap-4 ">
             <Link
               href=""
               className=" group p-2 bg-white w-8 h-8 rounded-full aspect-square hover:bg-primary transition-all duration-100 ease-linear cursor-pointer scale-75 md:scale-100"
@@ -106,18 +106,20 @@ const Footer = () => {
             </Link>
           </div>
         </section>
-        <section className="flex flex-col gap-2 text-xs">
-          <h1 className="text-xl">Area of work</h1>
-          <p>Technology</p>
-          <p>Application Area</p>
-        </section>
-        <section className="flex flex-col gap-2 text-xs">
-          <h1 className="text-xl">Projects</h1>
-          <p>Culture & Heritage</p>
-          <p>Edtech</p>
-          <p>Multi-sensory immersion Technologies</p>
-          <p>Healthcare & Medical Education</p>
-        </section>
+        <div className="flex  justify-between gap-12 md:gap-20">
+          <section className="w-[50%] md:w-fit flex flex-col gap-2 text-xs">
+            <h1 className="text-lg md:text-xl">Area of work</h1>
+            <p>Technology</p>
+            <p>Application Area</p>
+          </section>
+          <section className="w-[50%] md:w-fit flex flex-col gap-2 text-xs">
+            <h1 className="text-lg md:text-xl">Projects</h1>
+            <p>Culture & Heritage</p>
+            <p>Edtech</p>
+            <p>Multi-sensory immersion Technologies</p>
+            <p>Healthcare & Medical Education</p>
+          </section>
+        </div>
       </section>
 
       <div className="--line w-full h-[6px] md:h-[12px] bg-primary"></div>
