@@ -23,9 +23,8 @@ export default function Team() {
               )
           )}
         </div>
-        <h1 className="text-lg md:text-xl lg:text-2xl font-medium  text-primary -mb-6 text-center">
-          Research & Development
-        </h1>
+
+        <Heading heading="Research & Development" small={true} />
         <div className="flex items-center  w-full md:w-[80%] lg:w-[70%] mx-auto overflow-x-hidden gap-0 relative flex-wrap justify-center">
           {team.map(
             (teamMember, index) =>
@@ -41,9 +40,8 @@ export default function Team() {
           )}
         </div>
 
-        <h1 className="text-lg md:text-xl lg:text-2xl font-medium  text-primary -mb-6 text-center">
-          Design Team
-        </h1>
+        <Heading heading="Design Team" small={true} />
+
         <div className="flex items-center  w-full md:w-[80%] lg:w-[70%] mx-auto overflow-x-hidden gap-0 relative flex-wrap justify-center">
           {team.map(
             (teamMember, index) =>
@@ -59,9 +57,8 @@ export default function Team() {
           )}
         </div>
 
-        <h1 className="text-lg md:text-xl lg:text-2xl font-medium  text-primary -mb-6 text-center">
-          Development Team
-        </h1>
+        <Heading heading="Development Team" small={true} />
+
         <div className="flex items-center  w-full md:w-[80%] lg:w-[70%] mx-auto overflow-x-hidden flex-wrap justify-center">
           {team.map(
             (teamMember, index) =>
@@ -76,9 +73,9 @@ export default function Team() {
               )
           )}
         </div>
-        <h1 className="text-lg md:text-xl lg:text-2xl font-medium  text-primary -mb-6 text-center">
-          Animation + VFX
-        </h1>
+
+        <Heading heading="Animation + VFX" small={true} />
+
         <div className="flex items-center  w-full md:w-[80%] lg:w-[70%] mx-auto overflow-x-hidden flex-wrap justify-center">
           {team.map(
             (teamMember, index) =>

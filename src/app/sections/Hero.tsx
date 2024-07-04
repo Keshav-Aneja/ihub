@@ -7,8 +7,8 @@ export default function Hero() {
   }, []);
   return (
     <div className="w-full h-screen relative overflow-y-hidden overflow-x-hidden">
-      <div className="bg-light_bg w-[110vw] h-[30vh] rounded-[100%] absolute -top-[15vh] left-1/2 -translate-x-1/2 hidden md:block"></div>
-      <div className="bg-light_bg w-[110vw] h-[10vh] rounded-[100%] absolute -bottom-[5vh] left-1/2 -translate-x-1/2"></div>
+      {/* <div className="bg-light_bg w-[110vw] h-[30vh] rounded-[100%] absolute -top-[15vh] left-1/2 -translate-x-1/2 hidden md:block"></div> */}
+      {/* <div className="bg-gradient-to-t from-white to-[rgba(0,0,0,0)] w-[110vw] h-[30vh]  absolute -bottom-[5vh] left-1/2 -translate-x-1/2"></div> */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center parallax-container-2   hero-heading">
         <h1 className="text-4xl md:text-6xl lg:text-8xl   font-bold">
           iHub - Drishti

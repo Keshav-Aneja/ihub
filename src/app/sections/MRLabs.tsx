@@ -7,41 +7,56 @@ export default function MRLabs() {
   return (
     <div className="w-full h-[80vh] md:h-screen overflow-hidden" id="mrlab">
       <div className="w-full h-[80vh] md:h-screen relative parallax-container overflow-x-hidden">
-        <Image
-          src="/Hololens1.png"
-          alt=""
-          width={500}
-          height={500}
-          className="w-28 md:w-40 lg:w-60 h-auto floater absolute top-[10%] right-8 md:right-16 lg:right-24"
-        />
-        <Image
-          src="/gpu.webp"
-          alt=""
-          width={500}
-          height={500}
-          className="w-28 md:w-40 lg:w-60 h-auto floater absolute top-[15%] left-4 md:left-10 lg:left-12"
-        />
-        <Image
-          src="/scanner.jpg"
-          alt=""
-          width={500}
-          height={500}
-          className="hidden md:block w-28 md:w-40 lg:w-60 h-auto floater absolute bottom-[10%] right-12"
-        />
-        <Image
-          src="/oculus2.jpg"
-          alt=""
-          width={500}
-          height={500}
-          className="w-40 md:w-40 lg:w-60 h-auto floater absolute bottom-[5%] left-1/2 -translate-x-1/2"
-        />
-        <Image
-          src="/vive.webp"
-          alt=""
-          width={500}
-          height={500}
-          className="w-32 md:w-40 lg:w-60 h-auto floater absolute bottom-[20%] left-8 md:left-20 lg:left-48"
-        />
+        <div className="flex flex-col items-center gap-2 absolute top-[10%] right-8 md:right-16 lg:right-24">
+          <Image
+            src="/Hololens1.png"
+            alt=""
+            width={500}
+            height={500}
+            className="w-28 md:w-40 lg:w-60 h-auto floater "
+          />
+          <span className="text-sm font-medium">Hololens</span>
+        </div>
+        <div className="flex flex-col items-center absolute top-[15%] left-4 md:left-10 lg:left-12">
+          <Image
+            src="/gpu.webp"
+            alt=""
+            width={500}
+            height={500}
+            className="w-28 md:w-40 lg:w-60 h-auto floater "
+          />
+          <span className="text-sm font-medium">Nvidia Omniverse</span>
+        </div>
+        <div className="flex flex-col items-center absolute bottom-[10%] right-12">
+          <Image
+            src="/scanner.jpg"
+            alt=""
+            width={500}
+            height={500}
+            className="hidden md:block w-28 md:w-40 lg:w-60 h-auto floater "
+          />
+          <span className="text-sm font-medium">3D Scanner</span>
+        </div>
+        <div className="flex flex-col items-center absolute bottom-[5%] left-1/2 -translate-x-1/2">
+          <Image
+            src="/oculus2.jpg"
+            alt=""
+            width={500}
+            height={500}
+            className="w-40 md:w-40 lg:w-60 h-auto floater "
+          />
+          <span className="text-sm font-medium">Oculus Quest 2</span>
+        </div>
+        <div className="flex flex-col items-center absolute bottom-[20%] left-8 md:left-20 lg:left-4">
+          <Image
+            src="/vive.webp"
+            alt=""
+            width={500}
+            height={500}
+            className="w-32 md:w-40 lg:w-60 h-auto floater"
+          />
+          <span className="text-sm font-medium">HTC Vive Pro</span>
+        </div>
         <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 pop-in-out">
           <View3D
             tag="div"

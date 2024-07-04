@@ -40,10 +40,8 @@ const Footer = () => {
             />
             0291-2802248
           </a>
-          <button className="px-6 py-2 rounded-md bg-primary text-white text-sm font-normal w-fit">
-            Get in touch
-          </button>
-          <div className="--socials flex gap-4 ">
+
+          <div className="--socials flex gap-4 mt-4">
             <Link
               href=""
               className=" group p-2 bg-white w-8 h-8 rounded-full aspect-square hover:bg-primary transition-all duration-100 ease-linear cursor-pointer scale-75 md:scale-100"
@@ -108,12 +106,16 @@ const Footer = () => {
         </section>
         <div className="flex  justify-between gap-12 md:gap-20">
           <section className="w-[50%] md:w-fit flex flex-col gap-2 text-xs">
-            <h1 className="text-lg md:text-xl">Area of work</h1>
+            <h1 className="text-lg md:text-xl font-medium text-primary">
+              Area of work
+            </h1>
             <p>Technology</p>
             <p>Application Area</p>
           </section>
           <section className="w-[50%] md:w-fit flex flex-col gap-2 text-xs">
-            <h1 className="text-lg md:text-xl">Projects</h1>
+            <h1 className="text-lg md:text-xl font-medium text-primary">
+              Projects
+            </h1>
             <p>Culture & Heritage</p>
             <p>Edtech</p>
             <p>Multi-sensory immersion Technologies</p>

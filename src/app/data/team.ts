@@ -26,6 +26,30 @@ export const team = [
     designation: "Research Intern",
   },
   {
+    type: "rnd",
+    name: "Keshav Aneja",
+    img: "rnd4.jpg",
+    designation: "Research Intern",
+  },
+  {
+    type: "rnd",
+    name: "Rahul Khatri",
+    img: "rnd5.jpg",
+    designation: "Research Intern",
+  },
+  {
+    type: "rnd",
+    name: "Sushant Saurav",
+    img: "rnd6.jpg",
+    designation: "Research Intern",
+  },
+  {
+    type: "rnd",
+    name: "Vrishank Pandit",
+    img: "rnd8.jpg",
+    designation: "Research Intern",
+  },
+  {
     type: "design",
     name: "Kalpesh Sompura",
     img: "d1.webp",

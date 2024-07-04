@@ -71,7 +71,7 @@ export default function MobileNav({
                 <Link href="/#focus" onClick={handleLinkClick}>
                   Focus Area
                 </Link>
-                <Link href="/#projects" onClick={handleLinkClick}>
+                <Link href="/#project" onClick={handleLinkClick}>
                   Projects
                 </Link>
                 <Link href="/#mrlab" onClick={handleLinkClick}>

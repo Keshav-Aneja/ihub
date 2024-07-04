@@ -20,7 +20,7 @@ export default function Navbar({ activeTab, setActiveTab }: Props) {
           }}
         ></div>
       )}
-      <nav className="hidden md:flex --navbar w-[80%]  justify-between items-center px-8 py-0 absolute top-4 left-1/2 -translate-x-1/2  rounded-xl  mx-auto z-[100] ">
+      <nav className="hidden md:flex --navbar w-[80%]  justify-between items-center px-8 py-2 absolute top-4 left-1/2 -translate-x-1/2  rounded-xl  mx-auto z-[100] bg-[rgba(255,255,255,0.3)] backdrop-blur-md">
         <Image
           alt="logo"
           src="/logo.webp"
@@ -34,16 +34,14 @@ export default function Navbar({ activeTab, setActiveTab }: Props) {
               <a
                 href="/#focus"
                 className="hover:text-primary transition-all duration-100 ease-linear"
-                onClick={() => setActiveTab && setActiveTab(0)}
               >
                 Focus Area
               </a>
             </li>
             <li>
               <a
-                href="/#focus"
+                href="/#project"
                 className="hover:text-primary transition-all duration-100 ease-linear"
-                onClick={() => setActiveTab && setActiveTab(1)}
               >
                 Projects
               </a>
