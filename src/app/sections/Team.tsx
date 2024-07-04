@@ -24,18 +24,36 @@ export default function Team() {
           )}
         </div>
         <h1 className="text-lg md:text-xl lg:text-2xl font-medium  text-primary -mb-6 text-center">
+          Research & Development
+        </h1>
+        <div className="flex items-center  w-full md:w-[80%] lg:w-[70%] mx-auto overflow-x-hidden gap-0 relative flex-wrap justify-center">
+          {team.map(
+            (teamMember, index) =>
+              teamMember.type === "rnd" && (
+                <TeamCard
+                  name={teamMember.name}
+                  img={teamMember.img}
+                  designation={teamMember.designation}
+                  key={index}
+                  small={true}
+                />
+              )
+          )}
+        </div>
+
+        <h1 className="text-lg md:text-xl lg:text-2xl font-medium  text-primary -mb-6 text-center">
           Design Team
         </h1>
-        <div className="flex items-center  w-full mx-auto overflow-x-hidden gap-0 relative flex-wrap justify-center">
+        <div className="flex items-center  w-full md:w-[80%] lg:w-[70%] mx-auto overflow-x-hidden gap-0 relative flex-wrap justify-center">
           {team.map(
             (teamMember, index) =>
               teamMember.type === "design" && (
                 <TeamCard
                   name={teamMember.name}
                   img={teamMember.img}
+                  designation={teamMember.designation}
                   key={index}
                   small={true}
-                  highlight={teamMember.highlight ?? false}
                 />
               )
           )}
@@ -44,7 +62,7 @@ export default function Team() {
         <h1 className="text-lg md:text-xl lg:text-2xl font-medium  text-primary -mb-6 text-center">
           Development Team
         </h1>
-        <div className="flex items-center  w-full mx-auto overflow-x-hidden flex-wrap justify-center">
+        <div className="flex items-center  w-full md:w-[80%] lg:w-[70%] mx-auto overflow-x-hidden flex-wrap justify-center">
           {team.map(
             (teamMember, index) =>
               teamMember.type === "development" && (
@@ -52,8 +70,8 @@ export default function Team() {
                   name={teamMember.name}
                   img={teamMember.img}
                   key={index}
+                  designation={teamMember.designation}
                   small={true}
-                  highlight={teamMember.highlight ?? false}
                 />
               )
           )}
@@ -61,16 +79,16 @@ export default function Team() {
         <h1 className="text-lg md:text-xl lg:text-2xl font-medium  text-primary -mb-6 text-center">
           Animation + VFX
         </h1>
-        <div className="flex items-center  w-full mx-auto overflow-x-hidden flex-wrap justify-center">
+        <div className="flex items-center  w-full md:w-[80%] lg:w-[70%] mx-auto overflow-x-hidden flex-wrap justify-center">
           {team.map(
             (teamMember, index) =>
               teamMember.type === "animation" && (
                 <TeamCard
                   name={teamMember.name}
                   img={teamMember.img}
+                  designation={teamMember.designation}
                   key={index}
                   small={true}
-                  highlight={teamMember.highlight ?? false}
                 />
               )
           )}

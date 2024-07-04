@@ -1,3 +1,4 @@
+import ActivityCard from "../components/AcitivtyCard";
 import Heading from "../components/Heading";
 import { activities } from "../data/activities";
 import Image from "next/image";
@@ -9,7 +10,13 @@ export default function Activities() {
     >
       <Heading heading="Activities" />
       <section className="flex flex-col gap-10 md:gap-16 lg:gap-20">
-        {activities.map((activity, index) => (
+        <div className="scrolling-wrapper-flexbox">
+          {activities.map((activity, index) => (
+            <ActivityCard key={index} index={index} activity={activity} />
+          ))}
+        </div>
+
+        {/* {activities.map((activity, index) => (
           <>
             <div
               className="w-full flex flex-col md:flex-row gap-4 md:gap-12 lg:gap-20"
@@ -51,7 +58,7 @@ export default function Activities() {
             </div>
             <div className="w-full h-[1px] bg-primary"></div>
           </>
-        ))}
+        ))} */}
       </section>
     </div>
   );
