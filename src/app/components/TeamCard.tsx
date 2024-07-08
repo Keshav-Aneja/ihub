@@ -36,7 +36,7 @@ export default function TeamCard({
             >
               {name}
               <br />
-              <span className="text-[0.7rem] text-yellow-400">
+              <span className="text-[0.5rem] md:text-[0.7rem] text-yellow-400">
                 {designation}
               </span>
             </p>

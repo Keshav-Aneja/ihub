@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="bg-content w-[90%] mx-auto md:w-full flex flex-col">
       <div className="w-[90%] h-[1px] bg-[#7A7A7A] my-6 mx-auto hidden md:block"></div>
-      <section className="w-full h-full p-4 md:p-10 flex flex-col  md:flex-row  justify-center gap-8 md:gap-20 md:items-start ">
+      <section className="w-full h-full p-4 md:p-10 flex flex-col  md:flex-row  justify-center items-center gap-8 md:gap-20 md:items-start ">
         <Image
           src="/logo.webp"
           alt="ihub"
@@ -13,7 +13,7 @@ const Footer = () => {
           height={600}
           className="w-28 md:w-52 h-auto"
         />
-        <section className="flex flex-col gap-4 text-black">
+        <section className="flex flex-col items-center md:items-start gap-4 text-black">
           <a
             href="mailto:arvrinfo@ihub-drishit.ai"
             className="flex items-center gap-2 text-sm md:text-base"
@@ -105,22 +105,26 @@ const Footer = () => {
           </div>
         </section>
         <div className="flex  justify-between gap-12 md:gap-20">
-          <section className="w-[50%] md:w-fit flex flex-col gap-2 text-xs">
-            <h1 className="text-lg md:text-xl font-medium text-primary">
-              Area of work
-            </h1>
-            <p>Technology</p>
-            <p>Application Area</p>
-          </section>
-          <section className="w-[50%] md:w-fit flex flex-col gap-2 text-xs">
-            <h1 className="text-lg md:text-xl font-medium text-primary">
-              Projects
-            </h1>
-            <p>Culture & Heritage</p>
-            <p>Edtech</p>
-            <p>Multi-sensory immersion Technologies</p>
-            <p>Healthcare & Medical Education</p>
-          </section>
+          <a href="#focus">
+            <section className="w-[50%] md:w-fit flex flex-col gap-2 text-xs">
+              <h1 className="text-lg md:text-xl font-medium text-primary text-nowrap">
+                Focus Area
+              </h1>
+              <p>Technology</p>
+              <p>Application Area</p>
+            </section>
+          </a>
+          <a href="#project">
+            <section className="w-[50%] md:w-fit flex flex-col gap-2 text-xs">
+              <h1 className="text-lg md:text-xl font-medium text-primary">
+                Projects
+              </h1>
+              <p className="text-nowrap">Culture & Heritage</p>
+              <p className="text-nowrap">Edtech</p>
+              <p>Multi-sensory immersion Technologies</p>
+              <p>Healthcare & Medical Education</p>
+            </section>
+          </a>
         </div>
       </section>
 

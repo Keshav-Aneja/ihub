@@ -37,7 +37,7 @@ export default function Discover({ activeTab, setActiveTab }: Props) {
           }`}
           onClick={() => setActiveTab(1)}
         >
-          Area of Work
+          Focus Area
         </button>
       </div>
       <section className="w-[90%] md:w-[80%] flex flex-col gap-8 md:gap-0 md:flex-row items-start justify-between mx-auto">

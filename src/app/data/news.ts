@@ -2,36 +2,16 @@ export const news = [
   {
     title:
       " Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!",
-    description:
-      "Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!",
-    link: "www.google.com",
+    img: "culture1.webp",
   },
   {
     title:
       " 2Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!",
-    description:
-      "Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!",
-    link: "www.google.com",
+    img: "culture2.webp",
   },
   {
     title:
       " 3Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!",
-    description:
-      "Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!",
-    link: "www.google.com",
-  },
-  {
-    title:
-      " 4Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!",
-    description:
-      "Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!",
-    link: "www.google.com",
-  },
-  {
-    title:
-      "5 Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!",
-    description:
-      "Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!",
-    link: "www.google.com",
+    img: "culture3.webp",
   },
 ];

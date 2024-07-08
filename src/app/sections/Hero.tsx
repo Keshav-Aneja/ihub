@@ -19,7 +19,7 @@ export default function Hero() {
         <p className="mt-2">AR-VR Vertical</p>
       </div>
       <video
-        src="/demo.mp4"
+        src="/demo-cut.mp4"
         width={1920}
         height={1080}
         className="video-hero"

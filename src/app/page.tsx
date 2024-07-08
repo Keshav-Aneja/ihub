@@ -28,7 +28,7 @@ export default function Home() {
       <Projects />
       <MRLabs />
       <News />
-      <Events />
+      {/* <Events /> */}
       <Activities />
       <Team />
       <Footer />

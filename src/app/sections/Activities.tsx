@@ -10,7 +10,7 @@ export default function Activities() {
     >
       <Heading heading="Activities" />
       <section>
-        <div className="scrolling-wrapper-flexbox gap-8">
+        <div className="flex flex-col md:flex-row justify-between gap-8">
           {activities.map((activity, index) => (
             <ActivityCard key={index} index={index} activity={activity} />
           ))}

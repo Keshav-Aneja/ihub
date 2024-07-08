@@ -7,7 +7,7 @@ export const projects = [
     details: [
       "Digitization of Five Museum of Rajasthan",
       "chARatram: AR based Ancient storytelling from Painting",
-      "Kiradu Temple 3D Recostruction",
+      "Historical Temple 3D Recostruction",
       "Dharohar Virtual Walkthrough",
     ],
   },
