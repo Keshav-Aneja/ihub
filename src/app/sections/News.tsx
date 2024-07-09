@@ -12,8 +12,8 @@ export default function News() {
       id="events"
     >
       <Heading heading="News" />
-      <div className="w-[80%] mx-auto flex flex-col lg:flex-row justify-between h-fit gap-8 md:gap-0">
-        <section className="flex flex-col w-full lg:w-[30%]  pr-4">
+      <div className="w-[80%] mx-auto flex flex-col lg:flex-row justify-center h-fit gap-8 md:gap-0">
+        <section className="flex flex-col w-full lg:w-[35%]  pr-4">
           <h1 className="text-primary text-lg md:text-xl lg:text-2xl font-medium">
             News
           </h1>
@@ -31,8 +31,8 @@ export default function News() {
             ))}
           </ul>
         </section>
-        <section className="w-full md:w-[70%] h-full flex items-center justify-center">
-          <div className="w-full md:w-[60%] rounded-xl shadow-lg border-2 border-primary/40 overflow-hidden">
+        <section className="w-full md:w-[50%] h-full flex items-center justify-end">
+          <div className="w-full md:w-[80%] h-full rounded-xl shadow-lg border-2 border-primary/40 overflow-hidden">
             <Image
               src={`/${news[selectedNews].img}`}
               alt=""
@@ -40,8 +40,6 @@ export default function News() {
               height={700}
               className="w-full h-full object-cover"
             />
-            {/* <h1 className="font-medium">{news[selectedNews].title}</h1>
-            <p className="text-xs">{news[selectedNews].description}</p> */}
           </div>
         </section>
       </div>
