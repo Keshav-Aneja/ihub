@@ -1,17 +1,14 @@
 export const news = [
   {
-    title:
-      " Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!",
+    title: "AY 2024-25 M.Tech. ADMISSIONS",
     img: "culture1.webp",
   },
   {
-    title:
-      " 2Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!",
+    title: "AY 2024-25 Certificate course ADMISSIONS",
     img: "culture2.webp",
   },
   {
-    title:
-      " 3Lorem ipsum dolor sit amet, consec adipisicing elit. Praesentium, excepturi!",
+    title: "XR-BOOTCAMP",
     img: "culture3.webp",
   },
 ];

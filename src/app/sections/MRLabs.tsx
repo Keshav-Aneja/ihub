@@ -13,29 +13,35 @@ export default function MRLabs() {
             alt=""
             width={500}
             height={500}
-            className="w-28 md:w-40 lg:w-60 h-auto floater "
+            className="w-24 md:w-40 lg:w-60 h-auto floater "
           />
-          <span className="text-sm font-medium">Hololens</span>
+          <span className="text-[0.65rem] md:text-sm font-medium">
+            Hololens
+          </span>
         </div>
-        <div className="flex flex-col items-center absolute top-[15%] left-4 md:left-10 lg:left-12">
+        <div className="flex flex-col items-center absolute top-[5%] md:top-[15%] left-4 md:left-10 lg:left-12">
           <Image
             src="/gpu.webp"
             alt=""
             width={500}
             height={500}
-            className="w-28 md:w-40 lg:w-60 h-auto floater "
+            className="w-24 md:w-40 lg:w-60 h-auto floater "
           />
-          <span className="text-sm font-medium">Nvidia Omniverse</span>
+          <span className="text-[0.65rem]  md:text-sm font-medium">
+            Nvidia Omniverse
+          </span>
         </div>
-        <div className="flex flex-col items-center absolute bottom-[10%] right-12">
+        <div className="flex flex-col items-center absolute bottom-[10%] right-2 md:right-12">
           <Image
             src="/scanner.jpg"
             alt=""
             width={500}
             height={500}
-            className="hidden md:block w-28 md:w-40 lg:w-60 h-auto floater "
+            className="block w-24 md:w-40 lg:w-60 h-auto floater "
           />
-          <span className="text-sm font-medium">3D Scanner</span>
+          <span className="text-[0.65rem] md:text-sm font-medium">
+            3D Scanner
+          </span>
         </div>
         <div className="flex flex-col items-center absolute bottom-[5%] left-1/2 -translate-x-1/2">
           <Image
@@ -43,9 +49,11 @@ export default function MRLabs() {
             alt=""
             width={500}
             height={500}
-            className="w-40 md:w-40 lg:w-60 h-auto floater "
+            className="w-24 md:w-40 lg:w-60 h-auto floater "
           />
-          <span className="text-sm font-medium">Oculus Quest 2</span>
+          <span className="text-[0.65rem] md:text-sm font-medium">
+            Oculus Quest 2
+          </span>
         </div>
         <div className="flex flex-col items-center absolute bottom-[20%] left-8 md:left-20 lg:left-4">
           <Image
@@ -53,9 +61,11 @@ export default function MRLabs() {
             alt=""
             width={500}
             height={500}
-            className="w-32 md:w-40 lg:w-60 h-auto floater"
+            className="w-24 md:w-40 lg:w-60 h-auto floater"
           />
-          <span className="text-sm font-medium">HTC Vive Pro</span>
+          <span className="text-[0.65rem] md:text-sm font-medium">
+            HTC Vive Pro
+          </span>
         </div>
         <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 pop-in-out">
           <View3D
