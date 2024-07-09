@@ -1,14 +1,14 @@
 export const news = [
   {
     title: "AY 2024-25 M.Tech. ADMISSIONS",
-    img: "culture1.webp",
+    img: "news1.jpg",
   },
   {
     title: "AY 2024-25 Certificate course ADMISSIONS",
-    img: "culture2.webp",
+    img: "news2.jpg",
   },
   {
-    title: "XR-BOOTCAMP",
-    img: "culture3.webp",
+    title: "XR-BOOTCAMP Certification",
+    img: "news3.jpg",
   },
 ];

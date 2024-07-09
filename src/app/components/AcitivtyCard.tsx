@@ -10,13 +10,13 @@ export default function ActivityCard({
 }) {
   return (
     <div className="flex flex-col w-full md:w-[33%] gap-2 md:gap-6 h-full bg-white  card">
-      <div className={` w-full rounded-xl  `}>
+      <div className={` w-full rounded-xl overflow-hidden `}>
         <Image
           src={`/${activity.img}`}
           alt={activity.name}
           height={500}
           width={600}
-          className="w-full h-full"
+          className="w-full aspect-[500/333]"
         />
       </div>
       <section className={`w-full md:h-full`}>

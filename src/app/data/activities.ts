@@ -3,7 +3,7 @@ export const activities = [
     name: "PRAGATII",
     description:
       "Pragatii is Program For Acceleration And Growth In AI And XR Fusion Technology Development For Innovative Ideas - organized by iHub Drishti Foundation, IIT Jodhpur, in association with Technology Innovation and Start-up Center (TISC), IIT Jodhpur. The Hackathon was launched on 1st August 2023",
-    img: "act1.webp",
+    img: "act1.jpg",
   },
   {
     name: "i-Hub Drishti Game Jam",

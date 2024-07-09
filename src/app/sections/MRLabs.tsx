@@ -86,7 +86,7 @@ export default function MRLabs() {
         </div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[rgba(255,255,255,0.4)] backdrop-blur-[2px] p-4 rounded-xl w-full md:w-fit">
           <motion.h1
-            className="text-3xl md:text-4xl lg:text-[4rem] text-white text-center font-bold 2"
+            className="text-3xl md:text-4xl lg:text-[4rem] text-white text-center font-bold mb-4"
             style={{ textShadow: "0px 0px 10px rgba(0,0,0,0.5)" }}
             initial={{ opacity: 0.7, translateY: -50, scale: 0.5 }}
             whileInView={{ opacity: 1, translateY: 0, scale: 1 }}

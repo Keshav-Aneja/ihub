@@ -32,7 +32,7 @@ export default function News() {
           </ul>
         </section>
         <section className="w-full md:w-[70%] h-full flex items-center justify-center">
-          <div className="w-full md:w-[70%] aspect-[500/333] rounded-xl shadow-lg border-2 border-primary/40 overflow-hidden flex flex-col gap-4">
+          <div className="w-full md:w-[60%] rounded-xl shadow-lg border-2 border-primary/40 overflow-hidden">
             <Image
               src={`/${news[selectedNews].img}`}
               alt=""
